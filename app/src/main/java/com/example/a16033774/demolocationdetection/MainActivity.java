@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //delete location
+        //delete location 
         btnRemoveLocationUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
