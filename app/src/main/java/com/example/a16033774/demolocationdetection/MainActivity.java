@@ -33,9 +33,11 @@ public class MainActivity extends AppCompatActivity {
         btnGetLocationUpdate = (Button) findViewById(R.id.btnGetLocationUpdate);
         btnRemoveLocationUpdate = (Button) findViewById(R.id.btnRemoveLocationUpdate);
 
+        //connect to google play location services
         client = LocationServices.getFusedLocationProviderClient(this);
 
 
+        //associated with the update event
         final LocationCallback mLocationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(LocationResult locationResult) {
@@ -72,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //delete location 
+        //delete location
         btnRemoveLocationUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
